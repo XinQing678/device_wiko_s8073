@@ -1,11 +1,11 @@
 android_device_wiko_s8073
 ========================================
 A vérifier :
-BoardConfig.mk (part size may diff)
-Kernel
-recorvery.fstab (sdcard 2)
-s8073.mk (LOCAL_KERNEL lines missing)
-system.prop
+	BoardConfig.mk (part size may diff)
+	Kernel
+	recorvery.fstab (sdcard 2)
+	s8073.mk (LOCAL_KERNEL lines missing)
+	system.prop
 ========================================
 
 
