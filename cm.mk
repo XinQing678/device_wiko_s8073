@@ -2,7 +2,7 @@
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
-$(call inherit-product, device/wiko/s8073/s8073.mk)
+$(call inherit-product, device/wiko/s8073/device_s8073.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
