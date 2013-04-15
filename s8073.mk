@@ -11,8 +11,8 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_s9091
-PRODUCT_DEVICE := s9091
+PRODUCT_NAME := full_s8073
+PRODUCT_DEVICE := s8073
 
 #Permissions device files
 PRODUCT_COPY_FILES += \
@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
 	device/wiko/s8073/permissions/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml\
 	device/wiko/s8073/permissions/android.software.sip.xml:system/etc/permissions/android.software.sip.xml\
 	device/wiko/s8073/permissions/com.android.location.provider.xml:system/etc/permissions/com.android.location.provider.xml\
-	device/wiko/s9091/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml\
+	device/wiko/s8073/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml\
 	device/wiko/s8073/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml\
 	device/wiko/s8073/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml\
 	device/wiko/s8073/permissions/com.mediatek.location.provider.xml:system/etc/permissions/com.mediatek.location.provider.xml\
