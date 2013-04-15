@@ -11,7 +11,6 @@ lib/libextsimap_jni.so
 lib/libamrenc.so
 lib/libmhal.so
 lib/libextmap_jni.so
-lib/libmp4dec_sb.ca9.so
 lib/libmtka2dp.so
 lib/libextopp_jni.so
 lib/libnvram.so
@@ -52,12 +51,10 @@ lib/libnativecheck-jni.so
 lib/libmp3dec_mtk.so
 lib/libssladp.so
 lib/libMtkOmxApeDec.so
-lib/libja3m.so
 lib/libMtkVideoTranscoder.so
 lib/libh264dec_customize.so
 lib/libutilril3mtk.so
 lib/librilmtk.so
-lib/libh264enc_sb.ca9.so
 lib/libpalwlan_mtk.so
 lib/libMtkOmxAwbEnc.so
 lib/libmtkbtextadp.so
@@ -66,7 +63,6 @@ lib/libextbip.so
 lib/libexttestmode.so
 lib/libextpbap.so
 lib/libcamalgo.so
-lib/libmp4enc_xb.ca9.so
 lib/mtk-ril.so
 lib/libagpssupl.so
 lib/libMtkOmxAmrEnc.so
@@ -98,7 +94,6 @@ lib/libmtkbtextadpa2dp.so
 lib/librv9dec_customize.so
 lib/libmp4enc_xa.ca9.so
 lib/libvcodec_utility.so
-lib/libh264dec_xb.ca9.so
 lib/libdrmmtkutil.so
 lib/libextmap.so
 lib/libmp4dec_customize.so
@@ -149,7 +144,6 @@ bin/md_minilog_util
 bin/mtkbt
 bin/rild
 bin/xlog
-bin/mdpserver
 bin/btconfig
 bin/ccci_mdinit
 bin/ami304d
