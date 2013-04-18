@@ -31,22 +31,22 @@ on fs
 
 # mount mtd partitions
     write /proc/bootprof "INIT:eMMC:Mount_START"
-    exec /sbin/e2fsck -p /emmc@android
+    exec /sbin/e2fsck -p /dev/block/mmcblk0p3
     # Mount /system rw first to give the filesystem a chance to save a checkpoint
     #mount ext4 emmc@android /system commit=1,data=journal,noauto_da_alloc
-    mount ext4 /emmc@android /system commit=1,noauto_da_alloc
+    mount ext4 /dev/block/mmcblk0p3 /system commit=1,noauto_da_alloc
     mkdir /system/secro 0600 system system
     # RIL need to do this before the folder /system changed to read only
     chown radio system /system/etc/ril
     chmod 0770 /system/etc/ril
     chmod 0444 /system/etc/ril/oper.lis
-    mount ext4 /emmc@android /system noatime ro remount 
-    exec /sbin/e2fsck -pfD /emmc@usrdata
-    exec /sbin/tune2fs -O has_journal /emmc@usrdata
-    mount ext4 /emmc@usrdata /data noatime nosuid nodev noauto_da_alloc
-    exec /sbin/e2fsck -p /emmc@cache
-    exec /sbin/tune2fs -O has_journal /emmc@cache
-    mount ext4 /emmc@cache /cache noatime nosuid nodev noauto_da_alloc
+    mount ext4 /dev/block/mmcblk0p3 /system noatime ro remount 
+    exec /sbin/e2fsck -pfD /dev/block/mmcblk0p5
+    exec /sbin/tune2fs -O has_journal /dev/block/mmcblk0p5
+    mount ext4 /dev/block/mmcblk0p5 /data noatime nosuid nodev noauto_da_alloc
+    exec /sbin/e2fsck -p /dev/block/mmcblk0p4
+    exec /sbin/tune2fs -O has_journal /dev/block/mmcblk0p4
+    mount ext4 /dev/block/mmcblk0p4 /cache noatime nosuid nodev noauto_da_alloc
     write /proc/bootprof "INIT:eMMC:Mount_END"
 
 on post-fs

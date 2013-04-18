@@ -51,3 +51,17 @@ PRODUCT_COPY_FILES += \
 	device/wiko/s8073/permissions/gpsconfig.xml:system/etc/permissions/gpsconfig.xml\
 	device/wiko/s8073/permissions/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml\
 	device/wiko/s8073/permissions/platform.xml:system/etc/permissions/platform.xml\
+
+PRODUCT_COPY_FILES += \
+    device/wiko/s8073/prebuilt/root/init.s8073.rc:root/init.s8073.rc \
+    device/wiko/s8073/prebuilt/root/init.s8073.usb.rc:root/init.s8073.usb.rc \
+    device/wiko/s8073/prebuilt/root/init.mtk.rc:root/init.mtk.rc \
+    device/wiko/s8073/prebuilt/root/ueventd.s8073.rc:root/ueventd.s8073.rc \
+    device/wiko/s8073/prebuilt/system/etc/vold.fstab:system/etc/vold.fstab \
+    device/wiko/s8073/prebuilt/system/usr/keylayout/s8073-kpd.kl:/system/usr/keylayout/s8073_kpd.kl\
+    device/wiko/s8073/prebuilt/system/etc/.tp/thermal.conf:/system/etc/.tp/thermal.conf\
+    device/wiko/s8073/prebuilt/system/etc/.tp/thermal.off.conf:/system/etc/.tp/thermal.off.conf \
+    device/wiko/s8073/prebuilt/system/etc/mpeg4_venc_parameter.cfg:/system/etc/mpeg4_venc_parameter.cfg \
+    device/wiko/s8073/prebuilt/system/etc/mtk_omx_core.cfg:/system/etc/mtk_omx_core.cfg \
+    device/wiko/s8073/prebuilt/system/etc/player.cfg:/system/etc/player.cfg \
+    device/wiko/s8073/prebuilt/system/etc/srs_processing.cfg:/system/etc/srs_processing.cfg
