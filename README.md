@@ -4,18 +4,12 @@ A vérifier :
 
 BoardConfig.mk (partition size may diff)
 
-Kernel
-
 recorvery.fstab (sdcard 2)
-<<<<<<< HEAD
-device_s8073.mk (LOCAL_KERNEL lines missing)
-=======
 
-s8073.mk (LOCAL_KERNEL lines missing)
+device_s8073.mk (LOCAL_KERNEL lines missing)
 
 
 Get ready
->>>>>>> ba594f53492ec33443dd6ccbf81d27d4a80c49c3
 ========================================
 
 
