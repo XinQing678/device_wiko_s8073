@@ -92,8 +92,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_FLASH_BLOCK_SIZE := 2048
 
-######## A verifier
-#TODO check the recovery this doesn't exist in the original stuff
+#False values ; see partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 6500000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6000000
 
