@@ -26,18 +26,19 @@ COMMON_FOLDER := device/wiko/common
 
 PREBUILT_FOLDER := $(LOCAL_FOLDER)/prebuilt
 
-TARGET_PREBUILT_KERNEL := $(PREBUILT_FOLDER)/zImage
+#Some issues with prebuilt, and modules will not be create
+#TARGET_PREBUILT_KERNEL := $(PREBUILT_FOLDER)/zImage
 #We should use the current kernel until we can provide some more information when build
-#TARGET_PREBUILT_KERNEL := $(PREBUILT_FOLDER)/kernel
-#TARGET_KERNEL_SOURCE := kernel/wiko/s8073/kernel
-#TARGET_KERNEL_CONFIG := mediatek-configs
-#TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-linux-androideabi-4.4.x
-#TARGET_KERNEL_CUSTOM_TOOLCHAIN_BIN := arm-linux-androideabi-
-#TARGET_KERNEL_PROVIDES_BUILD_COMMANDS := kernel/wiko/s8073/s8073.mk
-#TARGET_KERNEL_MTK_HEADER := $(LOCAL_FOLDER)/emmctools/header
-#NEEDS_KERNEL_COPY := true
+TARGET_PREBUILT_KERNEL := $(PREBUILT_FOLDER)/kernel
+TARGET_KERNEL_SOURCE := kernel/wiko/s8073/kernel
+TARGET_KERNEL_CONFIG := mediatek-configs
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-linux-androideabi-4.4.x
+TARGET_KERNEL_CUSTOM_TOOLCHAIN_BIN := arm-linux-androideabi-
+TARGET_KERNEL_PROVIDES_BUILD_COMMANDS := kernel/wiko/s8073/s8073.mk
+TARGET_KERNEL_MTK_HEADER := $(LOCAL_FOLDER)/emmctools/header
+NEEDS_KERNEL_COPY := true
 
-#KERNEL_MAKE_PARAMETERS := TARGET_PRODUCT=s8073 MTK_ROOT_CUSTOM=$(TARGET_KERNEL_SOURCE)/mediatek/custom 
+KERNEL_MAKE_PARAMETERS := TARGET_PRODUCT=s8073 MTK_ROOT_CUSTOM=$(TARGET_KERNEL_SOURCE)/mediatek/custom 
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_FOLDER)/include
 
