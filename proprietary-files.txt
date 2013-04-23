@@ -11,6 +11,9 @@ lib/libextsimap_jni.so
 lib/libamrenc.so
 lib/libmhal.so
 lib/libextmap_jni.so
+lib/libcameracustom.so
+lib/libcustom_nvram.so
+lib/libmatv_cust.so
 lib/libmtka2dp.so
 lib/libextopp_jni.so
 lib/libnvram.so
