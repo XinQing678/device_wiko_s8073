@@ -20,10 +20,8 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/wiko/s8073/BoardConfigVendor.mk
 
-
 LOCAL_FOLDER := device/wiko/s8073
 COMMON_FOLDER := device/wiko/common
-
 PREBUILT_FOLDER := $(LOCAL_FOLDER)/prebuilt
 
 #Some issues with prebuilt, and modules will not be create
@@ -43,7 +41,6 @@ KERNEL_MAKE_PARAMETERS := TARGET_PRODUCT=s8073 MTK_ROOT_CUSTOM=$(TARGET_KERNEL_S
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_FOLDER)/include
 
 TARGET_BOARD_PLATFORM := mt6577
-
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
@@ -71,11 +68,10 @@ TARGET_BOARD_PLATFORM_GPU := POWERVR_SGX531
 TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
-
 BOARD_CONFIG_DIR := $(LOCAL_FOLDER)/config
+
 #Graphics
 BOARD_EGL_CFG := $(BOARD_CONFIG_DIR)/egl.cfg
-
 USE_OPENGL_RENDERER := true
 
 # TARGET_BOARD_PLATFORM := unknown
