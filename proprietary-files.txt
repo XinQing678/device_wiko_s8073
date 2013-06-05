@@ -127,6 +127,7 @@ lib/modules/alps_core.ko
 lib/modules/ccci.ko
 lib/modules/vcodec_kernel_driver.ko
 lib/modules/aed.ko
+lib/modules/sec.ko
 lib/hw/mmumapper.mt6577.so
 lib/hw/hwcomposer.mt6577.so
 etc/permissions/com.google.widevine.software.drm.xml
