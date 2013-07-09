@@ -19,6 +19,8 @@ USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
 -include vendor/wiko/s8073/BoardConfigVendor.mk
+-include device/wiko/common/BoardCommonConfig.mk
+
 
 LOCAL_FOLDER := device/wiko/s8073
 COMMON_FOLDER := device/wiko/common
