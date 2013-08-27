@@ -18,6 +18,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.mtk.aee.aed=on \
     persist.sys.usb.config=mass_storage,adb \
     persist.service.acm.enable=0
+    
+PRODUCT_PACKAGES += \
+    libui-mtk
+
 
 #Permissions device files
 PRODUCT_COPY_FILES += \

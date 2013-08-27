@@ -11,6 +11,9 @@ lib/libextsimap_jni.so
 lib/libamrenc.so
 lib/libmhal.so
 lib/libextmap_jni.so
+lib/libcameracustom.so
+lib/libcustom_nvram.so
+lib/libmatv_cust.so
 lib/libmtka2dp.so
 lib/libextopp_jni.so
 lib/libnvram.so
@@ -124,6 +127,7 @@ lib/modules/alps_core.ko
 lib/modules/ccci.ko
 lib/modules/vcodec_kernel_driver.ko
 lib/modules/aed.ko
+lib/modules/sec.ko
 lib/hw/mmumapper.mt6577.so
 lib/hw/hwcomposer.mt6577.so
 etc/permissions/com.google.widevine.software.drm.xml
